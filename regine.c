@@ -7,7 +7,6 @@ void Init(k) {
 	v[k] = 0;
 }
 
-
 int Succesor(k) {
 	if (v[k] < n) {
 		v[k]++;
