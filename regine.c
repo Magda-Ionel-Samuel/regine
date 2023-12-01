@@ -46,6 +46,30 @@ void Print() {
 	printf("\n");
 }
 
+void Back(int n) {
+	k = 1;
+	Init(k);
+	while (k > 0) {
+		int isS = 0;
+		int isV = 0;
+		if (k <= n)
+			do {
+				isS = Succesor(k);
+				if (isS)
+					isV = Valid(k);
+			} while (isS && !isV);
+			if (isS)
+				if (Solution(k))
+					Print();
+				else {
+					k++; Init(k);
+				}
+			else
+				k = k - 1;
+	}
+}
+
+
 int main()
 {
 
