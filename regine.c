@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 int v[10];
 int k, n;
